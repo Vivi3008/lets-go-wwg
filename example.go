@@ -23,6 +23,9 @@ func main() {
 	fmt.Printf("Pessoa %+v\n", vivi)
 	fmt.Printf("Meu nome é %s e tenho %v anos\n", vivi.Nome, vivi.Idade)
 
+	//mudando o valor de um atributo...simples!
+	vivi.Idade = 36
+
 	aula := Aula{
 		Descricao: "Aula de Golang",
 		Docente:   "Xenia",
@@ -36,5 +39,5 @@ func main() {
 	}
 
 	fmt.Printf("%+v\n", aula)
-	fmt.Println("tamanho do slice discentes", len(aula.Discentes))
+	fmt.Println("Quantidade de Alunos: ", len(aula.Discentes))
 }
