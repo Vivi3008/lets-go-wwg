@@ -67,16 +67,17 @@ func main() {
 	//printe na tela essa slice
 	signos := make([]string, 12, 12)
 
-	signos = append(signos, "Aquario", "Peixes", "Áries", "Touro", "Gemẽos", "Câncer", "Leão", "Virgem", "Libra", "Escorpião", "Sagitário", "Capricórnio")
+	signos[0] = "Aquario"
+	signos[1] = "Peixes"
+	signos[2] = "Aries"
 	fmt.Println("Signos do zodiaco: ", signos[:])
-	fmt.Println(len(signos))
+	fmt.Println("tamanho do slice: ", len(signos))
 
 	//crie um mapa onde as chaves(key) sao os numeros dos meses e o valor é o nome do mes
 	//printe os meses janeiro e dezembro
 
 	var meses = make(map[int16]string)
 	meses[1] = "janeiro"
-	meses[2] = "fevereiro"
 	meses[3] = "março"
 	meses[4] = "abril"
 	meses[5] = "maio"
